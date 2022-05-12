@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700&display=swap');
+
+:root {
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Pale-blue);
+    font-family: 'Outfit', sans-serif;
+    font-size: 16px;
+}
+
+.container {
+    background-color: white;
+    max-width: 450px;
+    /* max-height: 700px; */
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.top {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.top img {
+    width: 100%;
+    border-radius: 20px 20px 0px 0px ;
+   
+}
+
+.bottom h1 {
+    margin: 20px 0px 20px 0px;
+    
+}
+
+.bottom p {
+    color: var(--Desaturated-blue);
+}
+
+.budget {
+    margin: 0 auto;
+    max-width: 300px;
+}
+
+.budget > p {
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.plan {
+    margin: 0 auto;
+    max-width: 350px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 30px 20px 33px;
+    background-color: var(--Very-pale-blue);
+    margin-bottom: 10px;
+    transition: 0.5s;
+}
+
+.music {
+    display: flex;
+}
+
+.annual {
+    margin-left: 20px;
+    text-align: left;
+}
+
+.btn {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn > a {
+    text-decoration: none;
+}
+
+.plan .link {
+    color: var(--Bright-blue);
+    font-size: 14px;
+    transition: 0.5;
+}
+
+.plan .link:hover {
+    opacity: 0.6;
+}
+
+.btn .proceed {
+    background-color: var(--Bright-blue);
+    margin: 0 auto;
+    width: 350px;
+    color: white;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 15px 0px 15px 0px ;
+    box-shadow: 2px 25px 23px -8px  rgba(56,41,224,0.14);
+    transition: 0.4s;
+}
+
+.btn .proceed:hover {
+    opacity: 0.6;
+    transform: scale(1.05);
+}
+
+.btn .cancel {
+    padding: 15px 0px 15px 0px;
+    margin: 0px 0px 30px 0px;
+    font-weight: 900;
+    color: var(--Desaturated-blue);
+    font-size: 14px;
+    transition: 0.4;
+
+}
+
+.btn .cancel:hover {
+    opacity: 0.6;
+    transform: scale(1.05);
+}
+
+.btn .proceed:active {
+    position: relative;
+    top: 6px
+}
+
+.btn .cancel:active {
+    position: relative;
+    top: 6px
+}
+
+.plan:hover {
+    transform: scale(1.05);
+}
